@@ -1,0 +1,562 @@
+
+/* Global Styles */
+body {
+    background-color: black; /* Pehla color black */
+  color: white; /* Pehla text white */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Main Header Styles */
+header {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    width: 100%;
+}
+
+/* First Navbar: Logo and Heading */
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    border-bottom: 2px solid #ffe600; /* Yellow border */
+}
+
+.navbar-top .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-top .logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.navbar-top h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #ffe600; /* Yellow text */
+}
+
+/* Second Navbar: Search bar and icons */
+.navbar-middle {
+    background-color: #333; /* Darker shade of black */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-middle .search-bar {
+    flex-grow: 1;
+    max-width: 600px;
+    display: flex;
+    border: 2px solid #ffe600; /* Yellow border */
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.navbar-middle .search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #000;
+}
+
+.navbar-middle .search-bar button {
+    padding: 10px 20px;
+    background-color: #ffe600;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar-middle .icon {
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.navbar-middle .icon:hover {
+    color: #ffe600; /* Yellow hover effect */
+}
+
+/* Third Navbar: Page Links */
+.navbar-bottom {
+    background-color: #222; /* Darker background */
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.navbar-bottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.navbar-bottom a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffe600;
+    transition: width 0.3s;
+}
+
+.navbar-bottom a:hover {
+    color: #ffe600; /* Yellow hover */
+}
+
+.navbar-bottom a:hover::after {
+    width: 100%; /* Animate underline on hover */
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+    .navbar-top h1 {
+        font-size: 2em;
+    }
+
+    .navbar-middle {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar-middle .search-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-bottom a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+}
+
+/* Responsive Design for extra small screens */
+@media (max-width: 576px) {
+    .navbar-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-top h1 {
+        font-size: 1.8em;
+    }
+
+    .navbar-top .logo img {
+        height: 40px;
+    }
+
+    .navbar-middle .icon {
+        font-size: 1.2em;
+    }
+
+    .navbar-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-bottom a {
+        margin: 10px 0;
+        font-size: 1.1em;
+    }
+}
+
+/* Responsive Design for large LED screens */
+@media (min-width: 1200px) {
+    .navbar-top h1 {
+        font-size: 3.5em; /* Larger text for LED screens */
+    }
+
+    .navbar-top .logo img {
+        height: 70px;
+    }
+
+    .navbar-middle .search-bar input {
+        font-size: 1.5em;
+    }
+
+    .navbar-middle .search-bar button {
+        font-size: 1.5em;
+        padding: 15px 25px;
+    }
+
+    .navbar-middle .icon {
+        font-size: 2em; /* Larger icons */
+    }
+
+    .navbar-bottom a {
+        font-size: 1.5em;
+        margin: 0 30px;
+    }
+}
+/* ____________________________________footer________________________________ */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+/* Footer Styling */
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Social Media Section */
+.social-section {
+    background-color: #333; /* Darker shade for social section */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px 10px 0 0;
+}
+
+.social-section a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-section a:hover {
+    color: #ffe600; /* Yellow hover color */
+    transform: scale(1.1);
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-column {
+    width: 23%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.footer-column:hover {
+    transform: scale(1.05);
+}
+
+.footer-column h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #ffe600; /* Yellow text for headings */
+}
+
+.footer-column hr {
+    width: 60px;
+    height: 2px;
+    background-color: #ffe600; /* Yellow underline */
+    border: none;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+    color: #ddd; /* Soft white for text */
+    line-height: 1.6;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #ddd; /* Soft white for links */
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffe600; /* Yellow on hover */
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ffe600; /* Yellow icons */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #222; /* Darker black */
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #ffe600; /* Yellow for the copyright link */
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    color: #fff; /* White on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-column {
+        width: 48%; /* Two columns on tablet */
+    }
+
+    .social-section {
+        text-align: center;
+    }
+
+    .social-section div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-column {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .social-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-section a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ___________________________________________________________________________________________ */
+
+
+
+
+
+/* Carousel Images */
+.carousel-inner img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 50vh; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.carousel-inner img:hover {
+    transform: scale(1.05);
+}
+
+/* Fixed Text Overlay */
+.carousel-caption-fixed {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate back to center */
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Darker shadow for better contrast */
+    z-index: 10;
+    padding: 10px; /* Added padding */
+    width: 90%; /* Adjusted width */
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.carousel-caption-fixed h5 {
+    font-size: 1.5rem; /* Slightly reduced heading size for better aesthetics */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+.carousel-caption-fixed p {
+    font-size: 0.8rem; /* Adjusted paragraph size for better readability */
+    margin-bottom: 5px;
+    line-height: 1.4; /* Increased line height for better spacing */
+}
+
+/* Carousel Control Button Visibility */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 5;
+}
+
+/* Responsive Design for Small Screens (Mobile) */
+@media (max-width: 576px) {
+    .carousel-caption-fixed {
+        top: 50%; /* Maintain centering on mobile */
+        padding: 10px;
+    }
+
+    .carousel-caption-fixed h5 {
+        font-size: 1.2rem; /* Reduced heading size for mobile */
+    }
+
+    .carousel-caption-fixed p {
+        font-size: 0.8rem; /* Adjusted paragraph size for mobile */
+        line-height: 1.4; /* Improved line height */
+    }
+
+    .carousel-inner img {
+        height: 50vh; /* Set height for mobile images */
+    }
+}
+
+/* Responsive Design for Medium Screens (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .carousel-caption-fixed {
+        top: 50%; /* Centering for tablets */
+    }
+
+    .carousel-caption-fixed h5 {
+        font-size: 1.5rem; /* Larger heading for tablets */
+    }
+
+    .carousel-caption-fixed p {
+        font-size: 0.9rem; /* Adjusted paragraph size for tablets */
+    }
+
+    .carousel-inner img {
+        height: 50vh; /* Maintain fixed height for tablet images */
+    }
+}
+
+/* Responsive Design for Large Screens (LED Monitors) */
+@media (min-width: 1200px) {
+    .carousel-caption-fixed {
+        top: 50%; /* Centering for larger screens */
+    }
+
+    .carousel-caption-fixed h5 {
+        font-size: 2rem; /* Larger heading for large screens */
+    }
+
+    .carousel-caption-fixed p {
+        font-size: 1.2rem; /* Adjusted paragraph size for larger screens */
+    }
+
+    .carousel-inner img {
+        height: 70vh; /* Adjust height for larger screens */
+    }
+}
+
+
+  
+/* ___________________________________________________________________________________________ */
+/* _________________________________________________API CARDS_________________________________ */
+
+
+.custom-card {
+    border: 1px solid #007bff; /* Example border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+    padding: 15px; /* Padding inside the card */
+}
+
+.custom-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.card-title {
+    font-weight: bold; /* Make title bold */
+    font-size: 1.2rem; /* Adjust title size */
+}
+
+.card-subtitle {
+    font-style: italic; /* Make subtitle italic */
+    font-size: 1rem; /* Adjust subtitle size */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Smaller font for location */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) { /* Extra small devices (phones) */
+    .card-title {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+    
+    .card-subtitle {
+        font-size: 0.9rem; /* Smaller subtitle for mobile */
+    }
+    
+    .card-text {
+        font-size: 0.8rem; /* Even smaller text for mobile */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) { /* Small devices (tablets) */
+    .card-title {
+        font-size: 1.2rem; /* Adjust font size for small tablets */
+    }
+    
+    .card-subtitle {
+        font-size: 1rem; /* Adjust subtitle size for tablets */
+    }
+    
+    .card-text {
+        font-size: 0.9rem; /* Normal text size for tablets */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { /* Medium devices (small laptops) */
+    .card-title {
+        font-size: 1.4rem; /* Adjust font size for medium devices */
+    }
+    
+    .card-subtitle {
+        font-size: 1.1rem; /* Adjust subtitle size for medium devices */
+    }
+    
+    .card-text {
+        font-size: 1rem; /* Normal text size for medium devices */
+    }
+}
+
+@media (min-width: 992px) { /* Large devices (laptops, desktops, LED) */
+    .card-title {
+        font-size: 1.5rem; /* Larger font size for larger devices */
+    }
+    
+    .card-subtitle {
+        font-size: 1.2rem; /* Larger subtitle for larger devices */
+    }
+    
+    .card-text {
+        font-size: 1rem; /* Normal text size for larger screens */
+    }
+}
+
+
+
+/* ___________________________________________________________________________________________ */
+
+
+
+
+
